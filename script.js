@@ -1,14 +1,13 @@
-// Function to open the envelope
 function openEnvelope() {
     const envelope = document.querySelector('.envelope');
     const messageContainer = document.getElementById('message-container');
 
-    envelope.style.display = 'none'; // Hide the envelope
-    messageContainer.classList.remove('hidden'); // Show the message
-    startFireworks(); // Trigger fireworks
+    envelope.style.display = 'none'; 
+    messageContainer.classList.remove('hidden'); 
+    startFireworks(); 
 }
 
-// Function to create a firework effect
+
 function startFireworks() {
     const container = document.getElementById('fireworks-container');
 
@@ -21,6 +20,6 @@ function startFireworks() {
 
         container.appendChild(firework);
 
-        setTimeout(() => firework.remove(), 2000); // Remove after animation
+        setTimeout(() => firework.remove(), 2000);
     }
 }
